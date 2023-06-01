@@ -5,6 +5,10 @@ agent any
 tools{
 maven 'Maven 3.9.1'
 }
+options {
+  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
+  timestamps
+}
 stages{
    stage('CheckoutCode') {
    steps{  
