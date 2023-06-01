@@ -9,7 +9,7 @@ stages{
    stage('CheckoutCode') {
    steps{  
    sendSlackNotifications ('STARTED')
-   git branch: 'dev', credentialsId: '664e89b6-0792-4126-8a14-34910e75472c', url: 'https://github.com/hari-software-org/maven-web-application.git'
+   git branch: 'cloud_unit', credentialsId: '664e89b6-0792-4126-8a14-34910e75472c', url: 'https://github.com/hari-software-org/vpya-cdn-apache.git'
    }
    }
    stage('Build') {
